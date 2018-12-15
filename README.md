@@ -37,3 +37,27 @@ const Joi = BaseJoi.extend(BigNumberExtension);
 
 const schema = Joi.bignumber().positive().integer().min(10).less(100);
 ```
+
+## Development
+ 
+### Install dependencies
+
+```
+npm install
+```
+
+### Running tests
+
+```
+npm test
+```
+
+### Release
+
+```
+npm run release patch/minor/major
+```
+
+## License
+
+MIT
