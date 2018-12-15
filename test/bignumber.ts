@@ -17,6 +17,7 @@ describe('bignumber', () => {
         const result = bnValidator.validate('100');
 
         expect(result.error).to.be.null;
+        expect(result.value).to.be.instanceof(BigNumber);
         expect(result.value.toString()).to.be.equal('100');
     });
 
@@ -28,6 +29,15 @@ describe('bignumber', () => {
         expect(result.error).to.not.be.null;
         expect(result.error.name).to.be.equal('ValidationError');
         expect(result.error.message).to.be.equal('"wrong" is not a number');
+    });
+
+    it('should not convert if conversion is disabled', () => {
+        const bnValidator = Joi.bignumber();
+
+        const result = bnValidator.validate('100', {convert: false});
+
+        expect(result.error).to.be.null;
+        expect(result.value).to.be.string('100');
     });
 
     describe('min', () => {
