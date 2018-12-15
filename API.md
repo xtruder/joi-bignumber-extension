@@ -1,5 +1,5 @@
 <!-- version -->
-# 1.1.1 API Reference
+# 1.1.2 API Reference
 <!-- versionstop -->
 
 <!-- toc -->
