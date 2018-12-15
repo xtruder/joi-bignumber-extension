@@ -1,6 +1,6 @@
 {
   "name": "joi-bignumber-extension",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/xtruder/joi-bignumber-extension",
   "repository": "git://github.com/xtruder/joi-bignumber-extension",
   "description": "Joi BigNumber extension",
