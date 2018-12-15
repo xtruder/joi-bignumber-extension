@@ -31,7 +31,7 @@ const schema = Joi.bignumber().positive().integer().min(10).less(100);
 ```typescript
 import * as BaseJoi from 'joi';
 import {BigNumber} from 'bignumber.js';
-import {BigNumberExtension} from '../src/index';
+import {BigNumberExtension} from 'joi-bignumber-extension';
 
 const Joi = BaseJoi.extend(BigNumberExtension);
 
