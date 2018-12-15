@@ -1,6 +1,8 @@
 {
   "name": "joi-bignumber-extension",
   "version": "1.0.0",
+  "homepage": "https://github.com/xtruder/joi-bignumber-extension",
+  "repository": "git://github.com/xtruder/joi-bignumber-extension",
   "description": "Joi BigNumber extension",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -8,6 +10,7 @@
     "test": "mocha -r ts-node/register test/*.ts",
     "build": "tsc",
     "release": "np",
+    "toc": "hapitoc",
     "prepublish": "npm run build"
   },
   "keywords": [
@@ -29,6 +32,7 @@
   },
   "dependencies": {
     "bignumber.js": "^8.0.1",
+    "hapitoc": "^1.2.1",
     "joi": "^14.3.0"
   }
 }
